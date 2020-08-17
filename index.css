@@ -102,7 +102,7 @@ nav:hover .navbar {
 }
 
 .btn-primary {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: bold;
     padding: .8rem 1.2rem;
     background-color: white;
@@ -167,7 +167,7 @@ nav:hover .navbar {
 }
 
 .book-img {
-    width: 100px;
+    width: 40%;
     margin: auto;
 }
 
@@ -179,6 +179,11 @@ nav:hover .navbar {
 
 /* -------------- courses section ------------ */
 
+.course-section > button.btn-primary {
+    display: block;
+    margin: 3rem auto;
+}
+
 .course-section {
     width: 90%;
     margin: 3rem auto;
@@ -189,16 +194,17 @@ nav:hover .navbar {
     text-align: center;
 }
 
-.course-three-column {
-
-}
-
 .course-card {
     padding: 1rem;
     max-width: 280px;
     margin: 1rem auto;
     border: 2px solid grey;
     border-radius: .5rem;
+}
+
+.course-card > button.btn-primary {
+    display: block;
+    margin: auto;
 }
 
 .course-name {
@@ -295,13 +301,17 @@ nav:hover .navbar {
 }
 
 
-/* ------------------- ewviews container --------- */
+/* ------------------- reviews container --------- */
 
 .reviews-container {
     width: 90%;
     color: rgb(51, 51, 51);
     line-height: 1.6rem;
     margin: 2rem auto;
+}
+
+.reviews {
+    margin: auto;
 }
 
 .review {
@@ -367,6 +377,8 @@ nav:hover .navbar {
 
 .join-now-container {
     background-color: rgb(255, 0, 98);
+    margin-top: 4rem;
+    padding-bottom: 2rem;
 }
 
 .join-now {
@@ -387,7 +399,7 @@ nav:hover .navbar {
     margin: 3rem 0;
 }
 
-.subscribe-container > h2 {
+.subscribe-email > h2 {
     text-align: center;
     color: var(--dark-pink);
 }
@@ -405,7 +417,7 @@ nav:hover .navbar {
     margin: 2rem auto;
     padding: .5rem 1rem;
     font-size: 1.2rem;
-    border-bottom: 2px solid grey;
+    border-bottom: 2px solid rgb(204, 204, 204);
     color: rgb(51, 51, 51);
 }
 
@@ -474,3 +486,182 @@ footer {
     margin: auto;
     display: block;
 }
+
+
+
+@media (min-width: 576px) {
+    .mainline {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 728px) {
+    .jumbotron {
+        width: 75%;
+    }
+
+    .about {
+        display: flex;
+    }
+
+    .about-img,
+    .about-text {
+        flex: 1;
+    }
+
+    .about-text {
+        text-align: right;
+        margin-right: 2rem;
+    }
+
+    .about-text h2 {
+        font-size: 2rem;
+    }
+
+    .browse {
+        display: flex;
+        align-items: center;
+    }
+
+    .browse-img,
+    .browse-text {
+        flex: 1;
+    }
+
+    .browse-img {
+        order: 1;
+    }
+
+    .browse-text h2 {
+        font-size: 2rem;
+    }
+
+    .course-section h2 {
+        font-size: 2rem;
+        margin-top: 4rem;
+    }
+
+    .course-three-column {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .course-card {
+        margin: 1rem;
+        flex: 280px;
+    }
+
+    .our-community > h2 {
+        font-size: 2rem;
+    }
+
+    .money-back-guaranty {
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .money-back-img,
+    .money-back {
+        flex: 1;
+        margin: 0 2rem;
+    }
+
+    .money-back > h2 {
+        font-size: 2rem;
+    }
+
+    .reviews {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .review {
+        flex: 280px;
+        margin: 1rem;
+    }
+
+    .ready-to-learn > h2 {
+        font-size: 2rem;
+    }
+
+    .ready-card-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .ready-card {
+        flex: 280px;
+        margin: 1rem;
+    }
+
+    .join-now > h2 {
+        font-size: 2rem;
+    }
+
+    .subscribe-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .subscribe-email,
+    .subscribe-img {
+        flex: 1;
+    }
+
+    .subscribe-email > h2 {
+        font-size: 2rem;
+    }
+
+}
+
+
+@media (min-width: 1200px) {
+    .jumbotron-container {
+        background-image: url("images/background.png");
+        width: 100%;
+        height: 89vh;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .jumbotron {
+        margin: 0;
+        padding: 8rem 0 0 8rem;
+    }
+
+    .btn-primary {
+        padding: .8rem 1.6rem;
+    }
+
+    .btn-primary:hover {
+        background-color: var(--dark-pink);
+        color: white;
+    }
+
+    .logo,
+    nav,
+    .btn-primary,
+    .course-card,
+    .social-links img,
+    .footer-links-item {
+        cursor: pointer;
+    }
+
+    .nav-item:hover {
+        color: rgb(245, 131, 150);
+    }
+
+    .footer-links-item:hover {
+        text-decoration: none;
+    }
+
+    .social-links img:hover {
+        transform: scale(1.2);
+    }
+}
+
