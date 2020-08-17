@@ -195,11 +195,6 @@ nav:hover .navbar {
     margin: 3rem auto;
 }
 
-.course-section > h2 {
-    margin-bottom: 2rem;
-    text-align: center;
-}
-
 .course-card {
     padding: 1rem;
     max-width: 280px;
@@ -548,11 +543,6 @@ footer {
 
     .browse-text h2 {
         font-size: 2rem;
-    }
-
-    .course-section h2 {
-        font-size: 2rem;
-        margin-top: 4rem;
     }
 
     .course-three-column {
