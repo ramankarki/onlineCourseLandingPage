@@ -91,7 +91,7 @@ nav:hover .navbar {
 /* ------------ jumbotron section ---------------- */
 
 .jumbotron-container {
-    margin-top: 4.2rem;
+    margin-top: 8rem;
 }
 
 .jumbotron {
@@ -631,6 +631,10 @@ footer {
 
 
 @media (min-width: 1200px) {
+
+    .jumbotron-container {
+        margin-top: 4.2rem;
+    }
 
     .jumbotron-container {
         background-image: url("images/background.png");
