@@ -38,9 +38,10 @@ a:visited {
 header {
     background-color: var(--light-pink);
     padding: .5rem 0;
-    position: sticky;
+    position: fixed;
     top: 0;
-    z-index: 99;
+    z-index: 999;
+    width: 100%;
 }
 
 .header-container {
@@ -89,6 +90,9 @@ nav:hover .navbar {
 
 /* ------------ jumbotron section ---------------- */
 
+.jumbotron-container {
+    margin-top: 4.2rem;
+}
 
 .jumbotron {
     width: 90%;
